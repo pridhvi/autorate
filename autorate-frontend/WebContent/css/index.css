@@ -1,0 +1,345 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+.container {
+	height: 100vh;
+	background: url(../images/background-image-main.jpeg);
+	background-position: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.topbar {
+	height: 70px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: #1F2731;
+	position: fixed;
+	z-index: 1;
+}
+
+.topbar .logo-container>img {
+	width: 150px;
+	height: 50px;
+}
+
+.topbar .logo-container {
+	width: 20%;
+	display: flex;
+	align-items: center;
+}
+
+.topbar .logo-container:hover {
+	cursor: pointer;
+}
+
+.login-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+}
+
+.user-container {
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.user-container-username {
+	height: 100%;
+	width: 50px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-right: 50px;
+}
+
+.user-container-username>p {
+	height: 20px;
+	width: 50px;
+	color: wheat;
+	background-color: rgba(0, 0, 0, 0.479);
+}
+
+.user-container-username>p:hover {
+	cursor: pointer;
+}
+
+.user-container-dropdown {
+	height: 200px;
+	width: 150px;
+	background-color: rgb(123, 138, 151, 0.8);
+	position: absolute;
+	left: -30px;
+	top: 70px;
+	display: none;
+	font-size: 15px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.user-container-dropdown>* {
+	width: 80%;
+	text-align: center;
+}
+
+.user-container-dropdown input {
+	border: none;
+	background-color: transparent;
+}
+
+.user-container-dropdown>*:hover, .user-container-dropdown input:hover {
+	cursor: pointer;
+	color: wheat;
+}
+
+.login {
+	height: 70%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login * {
+	margin-left: 10px;
+}
+
+.login input {
+	height: 30px;
+	padding-left: 5px;
+	border: none;
+}
+
+.login input:hover,
+.login input:focus
+{
+	box-shadow: 0 0 100px black;
+}
+
+.login button {
+	height: 30px;
+	width: 60px;
+	background: #1AAB8A;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+}
+
+.login button:hover {
+	background: #fff;
+	color: #1AAB8A;
+}
+
+.signup {
+	height: 30%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 8%;
+	color: white;
+}
+
+.signup a {
+	text-decoration: none;
+	color: white;
+}
+
+.signup a:hover {
+	color: wheat;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.inner-container {
+	overflow-y: scroll;
+	height: -webkit-calc(100% - 70px);
+	position: absolute;
+	top: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-container-main {
+	min-height: 100%;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+	flex-wrap: wrap;
+    /* padding-bottom: 10px; */
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.inner-container-main-options {
+    margin-top: 50px;
+	width: 100%;
+	height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner-container-main-options>button {
+	width: 10%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+    border: 1px solid white;
+    /* border: none; */
+    border-radius: 20px;
+    color: white;
+    transition: 800ms ease all;
+    box-shadow: 0 0 30px black;
+}
+
+.inner-container-main-options>button p {
+    font-family: 'Arvo', serif;
+    font-size: 25px;
+}
+
+.button--hover:hover {
+	background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    color: white;
+}
+
+.inner-container-main-list {
+    margin-top: 50px;
+	width: 90%;
+	/* height: 80%; */
+	/* margin: auto; */
+	display: flex;
+	/* flex-direction: column; */
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	color: wheat;
+	/* overflow-y: scroll; */
+	/* padding: 15px; */
+}
+
+.inner-container-main-list div {
+	list-style-type: none;
+	width: 100px;
+	height: 50px;
+	/* background-color: rgba(0, 0, 0, 0.329); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.inner-container-main-list div:hover {
+    color: wheat;
+    cursor: pointer;
+}
+
+.inner-container-main-search {
+	width: 90%;
+	height: 40px;
+	margin-top: 100px;
+	display:flex;
+	justify-content: center;
+}
+
+.inner-container-main-search>input {
+	width: 50%;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+.inner-container-main-search>input:hover {
+	box-shadow: 0 0 30px white;
+}
+
+.inner-container-cars {
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+    background: url(../images/background-image-car-2.jpeg);
+	background-position: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.inner-container-cars-car-header {
+	height: 100px;
+	text-align: center;
+	background-color: #282e34;
+	color: #dddddd;
+}
+
+.inner-container-cars-info {
+	height: 250px;
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	display: flex;
+	background-color: rgb(102, 102, 102, 0.7);
+	border-radius: 5px;
+	color: wheat;
+}
+
+.inner-container-cars-info-car-name {
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.inner-container-cars-info-car-specs {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.inner-container-cars-info-car-specs>p {
+	min-width: 100px;
+	height: 40px;
+}
+
+footer {
+	height: 70px;
+	width: 100%;
+	background-color: #333333;
+	color: #fff;
+	line-height: 40px;
+	font-size: 15px;
+	text-align: center;
+	bottom: 0;
+}
